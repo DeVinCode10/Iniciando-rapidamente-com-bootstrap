@@ -1,0 +1,170 @@
+<!doctype html> <!-- Declaração do tipo de documento html. Neste caso é HTML5 -->
+
+<html lang="pt-br">
+	<head>
+	
+		<meta charset="UTF-8">
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		
+		<!-- <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' /> -->		
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta http-equiv="Expires" content="-1">
+		
+		<meta name="description" content="Descrição sobre o conteúdo da página com informação principal nos 50 primeiros caracteres, ideal é por volta de 155 caracteres totais." />
+		<meta name="author" content="Devincode.com.br">			
+		
+		<!-- Com a tag link geralmente apontamos para arquivos css internos ou xternos como o CDN abaixo, que carrega o css do Bootstrap -->	
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		
+		<title>Uma Página HTML5 Básica</title><!-- O titulo ideal deve ter no máximo 60 caracteres e conter a palavra chave principal da página.  -->
+	<style type="text/css">
+		
+		.content{
+			
+			/* Aqui eu só aumentei o tamanho da fonte. já que vou gravar.*/	
+			font-size: 1.4rem;		 
+			top:90px;
+			/* Para o top - posicionamento a partir do topo da página (ou o left - posicionamento a partir da esquerda) funcionar tem que ter o elemento position definido. */
+			position: relative; 
+		}
+
+	</style>
+	</head>
+	
+	<body>
+	
+
+<!-- <a class="sr-only sr-only-focusable" href="#conteudoprincipal">Pular para o conteúdo principal</a> O conteúdo -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+	<!--<nav class="navbar fixed-top navbar-expand-lg navbar-light " style="background-color: #e3f2fd;">    *** pode ser assim tb ***-->
+  <a class="navbar-brand" href="#">DeVinCode</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">HTML</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">CSS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Javascript</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Back-End
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">PHP</a>
+          <a class="dropdown-item" href="#">C#</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Outras Linguagens de Back-End</a>
+        </div>
+      </li>
+	  
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Um link desabilitado</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Pesquise no site" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+    </form>
+  </div>
+</nav>
+
+
+<div class="container content">
+
+<div class="card border-info">
+  <div class="card-header">
+    <h4 class="card-title">Cadastro de usuário</h4>
+  </div>
+  <div class="card-body">
+
+  	<form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Informe o seu E-mail.</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Informe o seu E-mail.">
+    <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Digite sua senha.</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Digite sua senha.">
+  </div>
+
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Informe o seu Estado.</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option>BA</option>
+      <option>DF</option>
+      <option>SP</option>
+      <option>RJ</option>
+      <option>OUTROS ESTADOS</option>
+    </select>
+  </div>
+
+<h4> Qual linguagem você estuda prefere? </h4>
+
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1" checked>
+  <label class="form-check-label" for="exampleRadios1">
+    HTML5
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="opcao2">
+  <label class="form-check-label" for="exampleRadios2">
+    Javascript
+  </label>
+</div>
+
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="opcao2">
+  <label class="form-check-label" for="exampleRadios2">
+    CSS
+  </label>
+</div>
+
+
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Informe o que você mais gosta de aprender.</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+
+
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Delaro que lí e aceito todas as condições do termo de responsabilidade.</label>
+  </div>
+  <button type="submit" class="btn btn-info btn-lg"><strong>Enviar</strong></button>
+</form>
+
+  </div>
+</div>
+
+</div> <!-- fim container do card -->
+
+
+
+
+		
+		<!-- Abaixo carregamos os scripts para uso de javascript com Bootstrap. O Bootstrap informa que é opcional, porém eu sempre adiciono, inclusive com o full Jquery  -->
+		<!-- Vocês devem incluir os arquivos na ordem que estão abaixo, ou seja, JQuery primeiro, depois o popper e finalmente o bootstrap.min.js  -->	
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	
+	</body>
+</html>
